@@ -1,5 +1,5 @@
 # playground
-A simple application for playing with different build stacks and technologies
+A simple application for playing with different build stacks and technologies.
 
 ## Tech stack
 
@@ -15,7 +15,7 @@ A simple application for playing with different build stacks and technologies
   - Building: babel, emscripten
   - Languages and Frameworks: mobx. lit, C++, WASM
 
-## Requirements
+## Goals
 
 - Runs on both desktop and mobile browsers (versions TBD)
 - Online or offline usage (i.e. PWA)
@@ -24,12 +24,25 @@ A simple application for playing with different build stacks and technologies
 - Authenticated using github APIs
 - No baked in keys(encryption, authentication, API)
 
+
+## Build requirements
+
+- `node` version compatible with rush (I use v16.14.2)
+- `rush`
+- `pnpm` (comes with `rush`)
+- `tsc`
+
+## Usage
+
+To use this application, you will visit the Github page for the repo. This will setup the service worker and sync the data fork (if any). To use the application, you will need to have write access to the repo and know the encryption password. To add a new user, simply fork this repo and modify the necessary bits to to reflect the new username.
+
 ## Architecture
 
 ### Top-down
 
 - Remote service
-  - Everything served by Github as static resources except authentication
+  - Everything served by Github as static resources except authentication.
+  - Data is stored in a separate branch, not as part of the main branch.
 - Client
   - A single page application, using React
 - Service worker
