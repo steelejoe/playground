@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="A simple application for playing with different build stacks and technologies"
+        />
+        <link rel="canonical" href="https://steelejoe.github.io/playground/" />
+        <link rel="icon" type="image/png" href="/playground/pg-favicon.png" />
+        <link rel="apple-touch-icon" href="/playground/pg-favicon.png" />
+        <link rel="manifest" href="/playground/manifest.json" />
+        <title>Playground</title>
+        <script>
+          if (navigator.serviceWorker) {
+              navigator.serviceWorker.register("/playground/pgSW.js");
+          }
+        </script>
+  </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <h1>Playground Client</h1>
+        <div id="root"></div>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "pg-serviceworker",
+  "version": "0.1.0",
+  "scripts": {
+    "setup-build": "ln -s -f $(pwd)/../docs build",
+    "build": "npm run setup-build && tsc",
+    "test": "react-scripts test",
+    "lint": "react-scripts eject"
+  },
+  "dependencies": {
+    "typescript": "^4.6.2",
+    "tslib": "^2.3.1"
+  }
+}
