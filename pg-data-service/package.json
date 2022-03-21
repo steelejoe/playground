@@ -1,14 +1,15 @@
 {
-  "name": "pg-server",
-  "version": "1.0.0",
-  "description": "This is the server side of Playground",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Joe Steele",
-  "license": "MIT",
-  "devDependencies": {
-    "typescript": "^4.6.2",
-    "tslib": "^2.3.1"
-  }}
+    "name": "pg-data-service",
+    "description": "These are the core data classes for Playground",
+    "version": "0.1.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc --outDir build",
+        "test": "echo TBD && exit 1",
+        "lint": "echo TBD && exit 1"
+    },
+    "devDependencies": {
+        "typescript": "^4.6.2",
+        "tslib": "^2.3.1"
+    }
+}
