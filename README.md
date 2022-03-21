@@ -31,12 +31,12 @@ To use this application, you will visit the Github page for the repo. This will 
 
 - Client
   - A single page application, using React
-  - See [./pg-client/README.md] for more details
+  - See [pg-client](./pg-client/README.md) for more details
 - Service worker
   - Local service that client connects to whether online or offline
   - Connects to remote service to sync data when online
-  - See [./pg-service-worker/README.md] for more details
+  - See [pg-service-worker](./pg-service-worker/README.md) for more details
 - Data Service
   - Data storage implementation
   - This is used by the service worker, but may also be part of a remote server
-  - See [./pg-data-service/README.md] for more details
+  - See [pg-data-service](./pg-data-service/README.md) for more details
