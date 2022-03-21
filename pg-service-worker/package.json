@@ -7,7 +7,7 @@
     "test": "react-scripts test",
     "lint": "react-scripts eject"
   },
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^4.6.2",
     "tslib": "^2.3.1"
   }
